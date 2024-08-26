@@ -1,0 +1,151 @@
+/* gallery */
+
+.gallery {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/* specific dropdown attributes */
+
+.dropcontent {
+    width: 120px;
+    top: 160px;
+}
+
+/* photo grid */
+
+.photoside {
+    overflow: auto;
+    /* adjust width of ls based on rs */
+    flex-grow: 1;
+    padding-right: 50px;
+}
+
+.photos > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photos > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.photos {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.photos img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.photos .tall {
+    grid-row: span 2;
+}
+
+.photos .big {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+/* videoplayer */
+
+.vidplayer {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 125px;
+    width: 400px;
+    height: 80vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.vidplayer::-webkit-scrollbar {
+    display: none;
+}
+
+.vidmask {
+    border-radius: 25px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.vidmask video {
+    padding-bottom: 25px;
+    width: 400px;
+}
+
+.vidplayer .caption {
+    font-size: 15px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+/* minimize & maximize buttons */
+
+.minimize, .maximize {
+    background-color: white;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    position: fixed;
+    z-index: 999;
+}
+
+.minimize {
+    top: 150px;
+    right: 6vw;
+}
+
+.maximize {
+    bottom: 50px;
+    right: 50px;
+}
+
+.minimize:hover, .maximize:hover{
+    cursor: grab;
+}
+
+/* adjust flexbox when vw is small enough */
+
+@media(max-width: 840px) {
+    /* turns horizontal navbar to sidebar */
+    .gallery {
+        display: block;
+        padding-top: 100px;
+    }
+    .minimize, .maximize, .vidplayer{
+        display: none !important;
+    }
+    .photoside {
+        padding-right: 0px;
+    }
+}
+
+@media(max-width: 600px) {
+    .photos .big, .photos .tall {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+}
+
+/* tab controls scrolling through years */
+
+.tab, .vidplayer {
+    display: none;
+}

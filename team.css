@@ -1,0 +1,55 @@
+/* meet the team */
+
+.meetteam .tab {
+    display: none;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meetteam .tab ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 30px;
+}
+
+.meetteam .tab li {
+    width: 235px;
+    height: 485px;
+}
+
+.meetteam .tab img {
+    width: 235px;
+}
+
+.name {
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+.role {
+    font-family: "Hanken Grotesk";
+    font-size: 13.5px;
+    font-weight: 275;
+    line-height: 18px;
+    font-style: italic;
+}
+
+.description {
+    padding-top: 9px;
+    font-family: "Hanken Grotesk";
+    font-size: 12px;
+    font-weight: 250;
+}
+
+.meet {
+    float: right;
+    padding-top: 8px;
+}
+
+.meet svg {
+    width: 18px;
+}
