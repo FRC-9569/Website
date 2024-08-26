@@ -72,19 +72,6 @@ loader.load('ROBOT.gltf', (gltf) => {
   mesh.position.set(0, 0.5, 0);
   scene.add(mesh);
 
-  document.getElementById('progress-container').style.display = 'none';
-}, (xhr) => {
-  console.log(`loading ${xhr.loaded / xhr.total * 100}%`);
-}, (error) => {
-  console.error(error);
-});
-
-window.addEventListener('resize', () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-});
-
 function animate() {
   requestAnimationFrame(animate);
   controls.update();
