@@ -135,6 +135,9 @@
     .photoside {
         padding-right: 0px;
     }
+    .dropcontent {
+        top: 140px;
+    }
 }
 
 @media(max-width: 600px) {
