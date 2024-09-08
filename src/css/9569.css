@@ -127,7 +127,7 @@ nav li:first-child {
 @media(max-width: 840px) {
     /* turns horizontal navbar to sidebar */
     .mobilehide {
-        display: none;
+        display: none !important;
     }
     .sidebarbutton {
         display: block;
