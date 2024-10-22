@@ -84,7 +84,7 @@
     overflow: hidden;
 }
 
-.vidmask video {
+.vidmask video, .vidmask iframe {
     padding-bottom: 25px;
     width: 400px;
 }
