@@ -272,9 +272,9 @@ nav li:first-child {
     font-weight: 250;
 }
 
-@media(max-width: 840px) {
+@media(max-width: 600px) {
     .caption {
-        font-size: 9px;
+        font-size: 8.5px;
     }
 }
 
