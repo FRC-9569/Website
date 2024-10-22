@@ -81,12 +81,12 @@
 .vidmask {
     border-radius: 25px;
     width: 400px;
-    height: 225px;
     overflow: hidden;
 }
 
-.vidmask iframe {
+.vidmask video, .vidmask iframe {
     padding-bottom: 25px;
+    width: 400px;
 }
 
 .vidplayer .caption {
