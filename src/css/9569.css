@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: Gries;
-    src: url(/assets/fonts/Gries.otf);
+    src: url(fonts/Gries.otf);
 }
 
 @font-face {
     font-family: Moderniz;
-    src: url(/assets/fonts/Moderniz.otf);
+    src: url(fonts/Moderniz.otf);
 }
 
 /* default */
