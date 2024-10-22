@@ -78,16 +78,15 @@
     display: none;
 }
 
+.vidplayer .head {
+    padding-top: 25px;
+}
+
 .vidmask {
     border-radius: 25px;
     width: 400px;
     height: 220px;
     overflow: hidden;
-}
-
-.vidmask video, .vidmask iframe {
-    padding-bottom: 25px;
-    width: 400px;
 }
 
 .vidplayer .caption {
